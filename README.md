@@ -1,4 +1,4 @@
-**Marc Gerard R. Odon**
-**BS Computer Science**
-**Link: TBA**
-**Others: TBA**
+**Marc Gerard R. Odon** 
+**BS Computer Science** 
+**Link: TBA** 
+**Others: TBA** 

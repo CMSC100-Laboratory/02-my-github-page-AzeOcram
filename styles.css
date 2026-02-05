@@ -1,0 +1,66 @@
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+/* PROFILE INFO */
+.profile-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile-picture {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+/* FEATURED PHOTO */
+.featured {
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* ABOUT ME */
+.about-me {
+    display: flex;
+    height: 300px;
+    border: 2px solid black;
+}

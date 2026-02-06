@@ -1,33 +1,89 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&display=swap');
+
+* {
+    font-family: 'Jersey 10', sans-serif;
+}
+
+body {
+    background-image: url("images/bg.png");
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 100%;
+    margin: 0 20px;
+}
 
 /* NAVIGATION BAR */
 .navbar {
-    background-color: #333333;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    gap: 8px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.nav-icon {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 50px; /* icon size */
+    height: 50px;
+    background-size: contain; /* bg configs */
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    filter: invert(100%);
+}
+
+/* nav icons bg */
+.nav-icon.skill-icon { background-image: url('/images/skills.png'); }
+.nav-icon.proj-icon { background-image: url('/images/projects.png'); }
+.nav-icon.about-icon { background-image: url('/images/about-me.png'); }
+.nav-icon.contact-icon { background-image: url('/images/contact.png'); }
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* make it look collapsed */
+    width: 100px;
+    height: 60px;
     overflow: hidden;
-    background-color: #333333;
+    transition: width 0.3s ease;
 }
 
-ul li {
-    float: left;
+
+.nav-item:hover {
+    width: 200px;             /* expanded */
 }
 
-ul li a {
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.nav-label {
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 10px;
+  transition: opacity 0.2s ease;
+  color: white;
+  font-size: xx-large;
 }
 
-ul li a:hover {
-    background-color: #111111;
+.nav-item:hover .nav-label {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 /* PROFILE INFO */

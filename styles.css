@@ -5,6 +5,10 @@
     font-family: 'Jersey 10', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("images/bg.png");
 }
@@ -90,7 +94,7 @@ body {
 .profile {
     display: flex;
     justify-content: space-evenly;
-    margin: 40px;
+    margin: 50px;
 }
 
 .intro-text {
@@ -106,8 +110,13 @@ body {
 }
 
 .highlight {
-    color: #74B3CE;
+  color: #74B3CE;
+   text-shadow: /* glow effect */
+    0 0 5px rgba(116, 179, 206, 0.6),
+    0 0 10px rgba(116, 179, 206, 0.4),
+    0 0 20px rgba(116, 179, 206, 0.2);
 }
+
 
 .actions {
     display: flex; 
@@ -129,7 +138,7 @@ body {
     cursor: pointer;
     outline: none;
     background-color: transparent;
-    
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -147,6 +156,60 @@ body {
 
 .socials a img:hover {
     transform: scale(1.2);
+}
+
+/* SKILLS */
+
+#skills-section h2 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  font-size: xx-large;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.progress {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.progress-fill {
+    height: 30px;
+    font-size: x-large;
+    background-color: #74B3CE;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* FEATURED PHOTO */

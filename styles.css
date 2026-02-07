@@ -86,25 +86,38 @@ body {
   text-decoration-color: white;
 }
 
-/* PROFILE INFO */
-.profile-info {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+/* INTRO TEXT */
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
 }
 
-.profile-picture {
-    height: 50px;
-    width: 50px;
-    background-color: blue;
-    border-radius: 50%;
+.intro-text {
+    display:flex;
+    flex-direction: column;
+    color: white;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+.intro-text h1 {
+    margin: 0;
+}
+
+.highlight {
+    color: #74B3CE;
 }
 
 /* FEATURED PHOTO */
-.featured {
-    height: 300px;
-    border: 2px solid black;
+.featured-photo {
+    max-width: 450px;
+}
+
+.featured-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* PROJECTS */

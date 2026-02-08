@@ -13,10 +13,14 @@ body {
     background-image: url("images/bg.png");
 }
 
-.site-header {
+#site-header {
+    background-color: rgba(23, 42, 58, 0.2);
+    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
 }
 
 /* LOGO */
@@ -175,9 +179,16 @@ body {
 }
 
 .skill {
-    background-color: rgba(116, 179, 206, 0.3);
+    background-color: rgba(116, 203, 206, 0.3);
     padding: 20px;
     border-radius: 8px;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.skill:hover {
+    background-color: rgba(0, 67, 70, 0.7);
+    transform: scale(1.05);
+
 }
 
 .skill-icon {
@@ -237,6 +248,13 @@ body {
     font-size: x-large;
 
     padding: 20px;
+    border-radius: 16px;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.project-container:hover {
+    background-color: rgba(0, 67, 70, 0.7);
+    transform: scale(1.05);
 }
 
 .project-container h3,
@@ -310,8 +328,9 @@ body {
 }
 
 /* FOOTER */
-.site-footer {
-    background-color:#172a3a;
+#site-footer {
+    background-color: rgba(23, 42, 58, 0.4);
+    backdrop-filter: blur(6px);
     color: white;
     padding: 15px 20px; 
     font-size: large;    
@@ -387,4 +406,3 @@ body {
     font-size: 0.85rem;
     opacity: 0.8;
 }
-

@@ -260,6 +260,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     color: white;
+    margin-bottom: 40px;
 }
 
 #about-me-section h2 {
@@ -301,9 +302,89 @@ body {
 .about-me-text {
     background: rgba(116, 179, 206, 0.3);
     border-radius: 16px;
-    padding: 10px;
     display: flex;
+    padding: 15px;
     flex-direction: column;
     font-size: x-large;
     line-height: 1.6;
 }
+
+/* FOOTER */
+.site-footer {
+    background-color:#172a3a;
+    color: white;
+    padding: 15px 20px; 
+    font-size: large;    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+/* Logo */
+.footer-logo {
+    order: 1;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    border-radius: 15px;
+}
+
+/* Contact Info */
+.footer-contact {
+    order: 3;
+    text-align: right;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+}
+
+.footer-contact a {
+    color: #09bc8a;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top */
+.back-to-top {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
+
+.back-to-top button {
+    background: #09bc8a;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-to-top button:hover {
+    background: #08a77d;
+}
+
+/* Bottom copyright */
+.footer-bottom {
+    text-align: center;
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
